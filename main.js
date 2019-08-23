@@ -18,10 +18,8 @@ $(function() {
 });
 
 // ヘッダーの画像とナビゲーションのフェードイン
-var setTimer = 2500;
 $(function() {
-  $('#navigation').fadeIn(setTimer);
-  $('.top-banner').addClass('show');
+  $('.js-header-show').addClass('show');
 });
 
 // リンクにクリックでスクロールする処理
