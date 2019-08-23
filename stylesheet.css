@@ -55,7 +55,7 @@ th {
 }
 
 .js-header-show {
-opacity: 0.1;
+opacity: 0;
 transition: 2.5s;
 }
 
@@ -141,7 +141,7 @@ header li a:hover {
 
 .top-banner {
   width: 100%;
-  opacity: 0.1;
+  opacity: 0;
   transition: 4s;
 }
 
