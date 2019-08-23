@@ -51,7 +51,7 @@
     width: 100%;
     min-height: 500px;
     margin-top: 9rem;
-    transition: 0s;
+    /* transition: 0s; */
     object-fit: cover;
     object-position: 40% 60%;
     }
