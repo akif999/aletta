@@ -55,6 +55,7 @@ th {
 }
 
 .js-header-show {
+  /* opacity: 0.1; */
 opacity: 0;
 transition: 2.5s;
 }
@@ -83,7 +84,7 @@ header ul {
 
 header li {
   margin-right: 3.5rem;
-  font-style: italic;
+  /* font-style: italic; */
   line-height: 8.8rem;
   float: left;
 }
@@ -141,6 +142,7 @@ header li a:hover {
 
 .top-banner {
   width: 100%;
+  /* opacity: 0.1; */
   opacity: 0;
   transition: 4s;
 }
@@ -174,7 +176,7 @@ header li a:hover {
   display: flex;
 }
 
-#concept-1st .item-left, #stylist .item-left {
+#concept-1st .item-left, #stylist-2nd .item-left {
   width: 40%;
   /* padding-right: 10%; */
   padding: 0 7% 0 3%;
@@ -185,11 +187,11 @@ header li a:hover {
   margin-top: 5rem;
 }
 
-#concept-2nd h2 {
+#stylist-2nd h2 {
   margin-top: 5rem;
 }
 
-#concept-2nd h3 {
+#stylist-2nd h3 {
   margin-top: 5rem;
 }
 
@@ -201,11 +203,11 @@ header li a:hover {
   margin-top: 4rem;
 }
 
-#concept-1st .item-right, #concept-2nd .item-left {
+#concept-1st .item-right, #stylist-2nd .item-right {
   width: 60%;
 }
 
-#concept-2nd .item-right {
+#stylist .item-right {
   width: 40%;
   padding: 0 3% 0 7%;
   box-sizing: border-box;
@@ -216,7 +218,7 @@ header li a:hover {
   font-size: 1.8rem;
 }
 
-#stylist .item-right {
+#stylist .item-left {
   width: 60%;
 }
 
@@ -271,7 +273,7 @@ header li a:hover {
   left: auto;
 }
 
-.flame img {
+.flame img, #gallery img {
   vertical-align: middle;
 }
 
