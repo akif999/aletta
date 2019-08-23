@@ -126,8 +126,7 @@
   }
 
   #concept-1st, #stylist, #gallery, #menu, #reserve {
-    padding: 12rem 0 3rem;
-
+    /* padding: 12rem 0 3rem; */
   }
 
   .gallery-1st div {
@@ -135,7 +134,7 @@
   }
 
   #information {
-    padding: 12rem 0 7.5rem 0;
+    /* padding: 12rem 0 7.5rem 0; */
   }
 
   #concept-1st .item-left, #stylist-2nd .item-left, #stylist .item-right, #menu .item-half, .text-contents {
