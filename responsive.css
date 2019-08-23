@@ -12,11 +12,15 @@
     text-align: center;
   }
 
-  #concept-1st h2, #concept-2nd h2, #stylist h2, #information h2 {
+  #concept-1st h2, #stylist-2nd h2, #stylist h2, #information h2 {
     margin-top: 0;
   }
 
-  #concept-2nd h3 {
+  #stylist .item-right {
+    order: 1;
+  }
+
+  #stylist-2nd h3 {
     margin-top: 0;
   }
 
@@ -43,24 +47,24 @@
     display: none;
   }
 
-  .menu-icon, #concept-1st .container, #concept-2nd .container, #stylist .container, #menu .container,   #information .container {
+  .menu-icon, #concept-1st .container, #stylist-2nd .container, #stylist .container, #menu .container,   #information .container {
       display: block;
     }
 
   .top-banner {
     width: 100%;
-    min-height: 500px;
+    min-height: 300px;
     margin-top: 9rem;
     /* transition: 0s; */
     object-fit: cover;
-    object-position: 40% 60%;
+    object-position: 50% 50%;
     }
 
   .scroll-icon {
     display: none !important;
   }
 
-  #concept-1st, #concept-2nd, #stylist, #gallery, #menu, #reserve {
+  #concept-1st, #stylist-2nd, #stylist, #gallery, #menu, #reserve {
     margin-top: -9rem;
     padding: 14rem 0 5rem;
   }
@@ -70,7 +74,7 @@
     padding: 14rem 0 7.5rem 0;
   }
 
-  #concept-1st .item-left, #concept-2nd .item-right, #stylist .item-left {
+  #concept-1st .item-left, #stylist-2nd .item-left, #stylist .item-right {
     margin-bottom: 7.5rem;
     padding: 0 20%;
   }
@@ -90,6 +94,10 @@
 
   #menu table {
     margin-bottom: 3rem;
+  }
+
+  .gallery-1st div {
+    margin-bottom: 1rem;
   }
 
   .text-contents {
@@ -122,11 +130,15 @@
 
   }
 
+  .gallery-1st div {
+    margin-bottom: 0.6rem;
+  }
+
   #information {
     padding: 12rem 0 7.5rem 0;
   }
 
-  #concept-1st .item-left, #concept-2nd .item-right, #stylist .item-left, #menu .item-left, #menu .item-right, .text-contents {
+  #concept-1st .item-left, #stylist-2nd .item-left, #stylist .item-right, #menu .item-half, .text-contents {
     padding: 0 10%;
   }
 
