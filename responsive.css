@@ -1,0 +1,149 @@
+/* 960px未満  */
+@media screen and (max-width: 959px) {
+  .item-right, .item-left {
+    width: 100% !important;
+  }
+
+  .item-half {
+    width: 100%;
+  }
+
+  h2, h3 {
+    text-align: center;
+  }
+
+  #concept-1st h2, #concept-2nd h2, #stylist h2, #information h2 {
+    margin-top: 0;
+  }
+
+  #concept-2nd h3 {
+    margin-top: 0;
+  }
+
+  .site-width {
+    margin: 0;
+  }
+
+  #navigation {
+    padding-left: 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #FFFFF0;
+    box-sizing: border-box;
+    z-index: 9;
+  }
+
+  header li {
+    margin-right: 2rem;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  .menu-icon, #concept-1st .container, #concept-2nd .container, #stylist .container, #menu .container,   #information .container {
+      display: block;
+    }
+
+  .top-banner {
+    width: 100%;
+    min-height: 500px;
+    margin-top: 9rem;
+    transition: 0s;
+    object-fit: cover;
+    object-position: 40% 60%;
+    }
+
+  .scroll-icon {
+    display: none !important;
+  }
+
+  #concept-1st, #concept-2nd, #stylist, #gallery, #menu, #reserve {
+    margin-top: -9rem;
+    padding: 14rem 0 5rem;
+  }
+
+  #information {
+    margin-top: -9rem;
+    padding: 14rem 0 7.5rem 0;
+  }
+
+  #concept-1st .item-left, #concept-2nd .item-right, #stylist .item-left {
+    margin-bottom: 7.5rem;
+    padding: 0 20%;
+  }
+
+  .stylist-name {
+    text-align: center;
+  }
+
+  #menu .item-half {
+    padding: 0 20%;
+    box-sizing: border-box;
+  }
+
+  #menu td {
+  text-align: center;
+  }
+
+  #menu table {
+    margin-bottom: 3rem;
+  }
+
+  .text-contents {
+    padding: 0 20%;
+  }
+
+  #information .item-half {
+    margin-bottom: 7.5rem;
+    padding: 0 20%;
+    box-sizing: border-box;
+  }
+
+  #information .item-half:last-child {
+    padding: 0;
+  }
+}
+
+/* 560px未満  */
+@media screen and (max-width: 559px) {
+  body {
+    font-size: 1.4rem;
+  }
+
+  #navigation {
+    padding-left: 5%;
+  }
+
+  #concept-1st, #stylist, #gallery, #menu, #reserve {
+    padding: 12rem 0 3rem;
+
+  }
+
+  #information {
+    padding: 12rem 0 7.5rem 0;
+  }
+
+  #concept-1st .item-left, #concept-2nd .item-right, #stylist .item-left, #menu .item-left, #menu .item-right, .text-contents {
+    padding: 0 10%;
+  }
+
+  .tel, .hotpepper {
+    width: 85%;
+    font-size: 1.4rem;
+  }
+
+  #information .item-half {
+    padding: 0 5%;
+  }
+}
+
+/* 画面が横向きの場合 */
+@media (orientation: landscape) {
+  #modal a {
+    margin-bottom: 0.3rem;
+    font-size: 1.8rem;
+  }
+}
