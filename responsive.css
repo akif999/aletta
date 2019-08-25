@@ -67,17 +67,17 @@
   #concept-1st, #stylist-2nd, #stylist, #gallery, #menu, #reserve {
     /* margin-top: -9rem; */
     /* padding: 14rem 0 5rem 0; */
-    padding: 9rem 0 9rem 0;
+    padding: 10rem 0 10rem 0;
   }
 
   #concept-1st {
-    padding-top: 9rem;
+    padding-top: 10rem;
   }
 
   #information {
     /* margin-top: -9rem; */
     /* padding: 14rem 0 7.5rem 0; */
-    padding: 5rem 0 7.5rem 0;
+    padding: 10rem 0 7.5rem 0;
   }
 
   #concept-1st .item-left, #stylist-2nd .item-left, #stylist .item-right {
@@ -107,7 +107,7 @@
   }
 
   #menu table {
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
   }
 
   .comment {
@@ -156,11 +156,15 @@
   }
 
   #information {
-    padding: 9rem 0 7.5rem 0;
+    /* padding: 9rem 0 7.5rem 0; */
   }
 
   #concept-1st .item-left, #stylist-2nd .item-left, #stylist .item-right, #menu .item-half, .text-contents {
     padding: 0 10%;
+  }
+
+  #menu th {
+    padding: 1.5rem 0 0.4rem 1.5rem;
   }
 
   .comment {
@@ -175,6 +179,19 @@
   #information .item-half {
     padding: 0 5%;
   }
+  .pc {
+    display: none;
+  }
+  .sp {
+    display: block;
+  }
+  .sp img {
+    width: 100%;
+  }
+  .active {
+    display: block;
+  }
+
 }
 
 /* 画面が横向きの場合 */
