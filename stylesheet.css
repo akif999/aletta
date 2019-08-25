@@ -192,6 +192,10 @@ header li a:hover {
   margin-top: 5rem;
 }
 
+#menu h3 {
+  margin-bottom: 2.5rem;
+}
+
 #stylist h2, #information h2 {
   margin-top: 2rem;
 }
@@ -233,6 +237,10 @@ header li a:hover {
 
 .item-half {
   width: 50%;
+}
+
+#menu .item-half {
+  padding: 0 5% 0 0;
 }
 
 #gallery .container {
@@ -295,17 +303,22 @@ header li a:hover {
   border-collapse: collapse;
 }
 
+#menu tr {
+  border-bottom: solid 1px #ccc;
+}
+
 #menu th {
-  width: 30%;
-  margin: 0;
-  padding: 0.4rem 0 0.4rem 2rem;
+  width: 35%;
+  /* margin: 1.5rem 0 0 0; */
+  padding: 1.5rem 0 0.4rem 3rem;
   text-align: left;
 }
 
 #menu td {
-  width: 20%;
-  margin: 0;
-  padding: 0.4rem 0;
+  width: 15%;
+  /* margin: 0 0 0 1.5rem; */
+  padding: 1.5rem 0 0.4rem 0;
+  text-align: center;
 }
 
 #menu span {
@@ -313,11 +326,11 @@ header li a:hover {
 }
 
 #menu .cut, #menu .perm {
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
 }
 
 #menu table {
-  margin-bottom:4rem;
+  margin-bottom:5rem;
 }
 
 .comment {
@@ -360,10 +373,12 @@ header li a:hover {
   margin: 2.5rem auto 0 auto;
   font-size: 1.6rem;
   font-weight: bold;
-  background: #eee;
+  /* background: #eee; */
+  background: #FFFFF0;
   letter-spacing: 0.3rem;
   line-height: 6.5rem;
   border: 0.2rem solid #444;
+  /* border: 0.2rem solid #2e221b; */
   border-radius: 0.3rem;
 }
 
@@ -382,6 +397,10 @@ header li a:hover {
 
 #reserve a:hover {
   background: #555;
+  /* background: #baba6f; */
+  /* background: #999955; */
+  /* background: #81813e; */
+  /* background: #212736; */
   color: #fff;
 }
 
@@ -391,6 +410,7 @@ footer {
   text-align: center;
   color: #fff;
   background: #333;
+  /* background: #212736; */
   font-size: 1.2rem;
 }
 
@@ -406,4 +426,57 @@ footer .fa-instagram {
 
 footer a {
   color: #fff;
+}
+
+/* 追加 */
+.sp-gallery li {
+  list-style: none;
+}
+
+.pc {
+  display: block;
+}
+.sp {
+  display: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.prev-btn, .next-btn {
+  width: 5rem;
+  height: 5rem;
+  /* margin: 0;
+  padding: 0; */
+  color: #333;
+  font-size: 5rem;
+  cursor: pointer;
+}
+
+.prev-btn {
+  /* margin-right: 1rem; */
+  float: left;
+  display: none;
+}
+.next-btn {
+  float: right;
+}
+
+.btn-wrap {
+  background: rgba(239,239,239,0.3);
+  /* width: 10rem; */
+  /* height: 5rem; */
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  /* z-index: 2; */
+  width: 10rem;
+  margin: 0 auto;
+}
+
+.active {
+  display: block;
+}
+
+.slide {
+  display: none;
 }
