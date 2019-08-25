@@ -84,3 +84,29 @@ $(window).scroll(function(){
     $("#navigation").css("top", 0 + "px");
   }
   startPos = currentPos;});
+
+// 画像スライド
+$(function() {
+
+  $('.slide-btn').click(function() {
+
+    var $imageSlide = $('.active');
+
+    $imageSlide.removeClass('active');
+    if ($(this).hasClass('next-btn')) {
+      $imageSlide.next().addClass('active');
+    } else {
+      $imageSlide.prev().addClass('active');
+    }
+
+    var fadeTime = 150;
+    var slideIndex = $('.slide').index($('.active'));
+
+    $('.slide-btn').fadeIn(fadeTime);
+    if (slideIndex == 0) {
+      $('.prev-btn').fadeOut(fadeTime);
+        } else if (slideIndex == $('.slide').length-1) {
+      $('.next-btn').fadeOut(fadeTime);
+    }
+  });
+});
