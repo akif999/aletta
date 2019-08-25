@@ -70,3 +70,17 @@ if (!isMobile) {
         e.preventDefault();
     });
 }
+
+// 下にスクロールfadeout、上にスクロールfadein
+var menuHeight = $("#navigation").height();
+var startPos = 0;
+$(window).scroll(function(){
+  var currentPos = $(this).scrollTop();
+  if (currentPos > startPos) {
+    if($(window).scrollTop() >= 200) {
+      $("#navigation").css("top", "-" + menuHeight + "px");
+    }
+  } else {
+    $("#navigation").css("top", 0 + "px");
+  }
+  startPos = currentPos;});
