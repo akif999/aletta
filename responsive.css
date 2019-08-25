@@ -16,12 +16,12 @@
     margin-top: 0;
   }
 
-  #stylist .item-right {
-    order: 1;
-  }
-
   #stylist-2nd h3 {
     margin-top: 0;
+  }
+
+  #stylist .item-right {
+    order: 1;
   }
 
   .site-width {
@@ -65,18 +65,32 @@
   }
 
   #concept-1st, #stylist-2nd, #stylist, #gallery, #menu, #reserve {
-    margin-top: -9rem;
-    padding: 14rem 0 5rem;
+    /* margin-top: -9rem; */
+    /* padding: 14rem 0 5rem 0; */
+    padding: 9rem 0 9rem 0;
+  }
+
+  #concept-1st {
+    padding-top: 9rem;
   }
 
   #information {
-    margin-top: -9rem;
-    padding: 14rem 0 7.5rem 0;
+    /* margin-top: -9rem; */
+    /* padding: 14rem 0 7.5rem 0; */
+    padding: 5rem 0 7.5rem 0;
   }
 
   #concept-1st .item-left, #stylist-2nd .item-left, #stylist .item-right {
     margin-bottom: 7.5rem;
     padding: 0 20%;
+  }
+
+  .bg-color {
+    /* background: #FFFFF0; */
+  }
+
+  .bg-color .flame::before,  .bg-color .flame::after {
+    /* background: #FFFFF0; */
   }
 
   .stylist-name {
@@ -94,6 +108,13 @@
 
   #menu table {
     margin-bottom: 3rem;
+  }
+
+  .comment {
+    width: 100%;
+    padding: 0 22%;
+    font-size: 1.2rem;
+    box-sizing: border-box;
   }
 
   .gallery-1st div {
@@ -127,6 +148,7 @@
 
   #concept-1st, #stylist, #gallery, #menu, #reserve {
     /* padding: 12rem 0 3rem; */
+
   }
 
   .gallery-1st div {
@@ -134,11 +156,15 @@
   }
 
   #information {
-    /* padding: 12rem 0 7.5rem 0; */
+    padding: 9rem 0 7.5rem 0;
   }
 
   #concept-1st .item-left, #stylist-2nd .item-left, #stylist .item-right, #menu .item-half, .text-contents {
     padding: 0 10%;
+  }
+
+  .comment {
+    padding: 0 12%;
   }
 
   .tel, .hotpepper {
@@ -153,6 +179,10 @@
 
 /* 画面が横向きの場合 */
 @media (orientation: landscape) {
+  .link-item {
+    margin-top: 7.5rem;
+  }
+
   #modal a {
     margin-bottom: 0.3rem;
     font-size: 1.8rem;
