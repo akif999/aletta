@@ -7,7 +7,6 @@ body {
   padding: 0;
   color: #333;
   background: #FFFFF0;
-  /* background: #999; */
   font-family: "Sawarabi Mincho" , YuMincho, "游明朝", "Hiragino Mincho ProN", "ヒラギノ明朝 ProN W3", Honoka, Meiryo, "メイリオ", serif;
   font-size: 1.5em;
   letter-spacing: 0.1rem;
@@ -19,11 +18,11 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0;
 }
 
-h2 {
-  margin-bottom: 4rem;
+img {
+  vertical-align: middle;
 }
 
-h3 {
+h2, h3 {
   margin-bottom: 4rem;
 }
 
@@ -50,29 +49,15 @@ th {
   margin: 0 auto;
 }
 
-#navigation {
-  /* display: none; */
-  transition: 0.3s;
-}
-
-.js-header-show {
-  /* opacity: 0.1; */
-opacity: 0;
-transition: 2.5s;
-}
-
 header {
   padding: 0 2%;
   overflow: hidden;
 }
 
-#site-logo {
-  margin: 3rem 0;
-  float: left;
-}
-
-#site-logo img {
-  height: 2.5rem;
+.site-logo {
+  height: 5rem;
+  margin: 2.5rem 0;
+  vertical-align: middle;
 }
 
 header nav {
@@ -85,8 +70,7 @@ header ul {
 
 header li {
   margin-right: 3.5rem;
-  /* font-style: italic; */
-  line-height: 8.8rem;
+  margin-top: 5.5rem;
   float: left;
 }
 
@@ -104,7 +88,7 @@ header li a:hover {
 }
 
 .menu-icon {
-  margin: 3rem 3% 0 0;
+  margin: 2.5rem 3% 0 0;
   font-size: 3rem;
   float: right;
   cursor: pointer;
@@ -131,7 +115,7 @@ header li a:hover {
 }
 
 #close-btn {
-  margin: 3rem 5% 0 0;
+  margin: 2.5rem 5% 0 0;
   font-size: 3rem;
   float: right;
   cursor: pointer;
@@ -141,11 +125,15 @@ header li a:hover {
   margin-top: 10rem;
 }
 
+.site-image {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
 .top-banner {
   width: 100%;
-  /* opacity: 0.1; */
   opacity: 0;
-  transition: 4s;
+  transition: 3s;
 }
 
 .show {
@@ -173,19 +161,18 @@ header li a:hover {
   display: flex;
 }
 
-#concept-1st .item-left, #stylist-2nd .item-left {
+#concept .item-left, #stylist-2nd .item-left {
   width: 40%;
-  /* padding-right: 10%; */
   padding: 0 7% 0 3%;
   box-sizing: border-box;
 }
 
-#concept-1st h2 {
+#concept h2 {
   margin-top: 5rem;
 }
 
-#stylist-2nd h2 {
-  margin-top: 5rem;
+#stylist h2, #information h2 {
+  margin-top: 2rem;
 }
 
 #stylist-2nd h3 {
@@ -196,20 +183,8 @@ header li a:hover {
   margin-bottom: 2.5rem;
 }
 
-#stylist h2, #information h2 {
-  margin-top: 2rem;
-}
-
-#information h2 {
-  /* margin-top: 4rem; */
-}
-
-#concept-1st .item-right, #stylist-2nd .item-right {
+#concept .item-right, #stylist-2nd .item-right {
   width: 60%;
-}
-
-.bg-color {
-  background: #F5F5DC;
 }
 
 #stylist .item-right {
@@ -217,10 +192,6 @@ header li a:hover {
   padding: 0 3% 0 7%;
   box-sizing: border-box;
   order: 1;
-}
-
-#stylist img {
-  /* vertical-align: middle; */
 }
 
 #stylist span {
@@ -255,6 +226,54 @@ header li a:hover {
   margin-bottom: 1rem;
 }
 
+.pc {
+  display: block;
+}
+
+.sp {
+  display: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.sp-gallery li {
+  list-style: none;
+}
+
+.slide {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.prev-btn, .next-btn {
+  width: 5rem;
+  height: 5rem;
+  color: #333;
+  font-size: 5rem;
+  cursor: pointer;
+}
+
+.btn-wrap {
+  width: 10rem;
+  margin: 0 auto;
+  background: rgba(239,239,239,0.3);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+.prev-btn {
+  float: left;
+  display: none;
+}
+.next-btn {
+  float: right;
+}
+
 .flame {
   display: inline-block;
   position: relative;
@@ -269,6 +288,10 @@ header li a:hover {
   height: 38%;
   background: #FFFFF0;
   transform: rotate(-45deg);
+}
+
+.bg-color {
+  background: #F5F5DC;
 }
 
 .bg-color .flame::before,  .bg-color .flame::after {
@@ -289,10 +312,6 @@ header li a:hover {
   left: auto;
 }
 
-.flame img, #gallery img {
-  vertical-align: middle;
-}
-
 #menu {
   padding-left: 3%;
   padding-right: 3%;
@@ -300,6 +319,7 @@ header li a:hover {
 
 #menu table {
   width: 100%;
+  margin-bottom:5rem;
   border-collapse: collapse;
 }
 
@@ -309,28 +329,18 @@ header li a:hover {
 
 #menu th {
   width: 35%;
-  /* margin: 1.5rem 0 0 0; */
   padding: 1.5rem 0 0.4rem 3rem;
   text-align: left;
 }
 
 #menu td {
   width: 15%;
-  /* margin: 0 0 0 1.5rem; */
   padding: 1.5rem 0 0.4rem 0;
   text-align: center;
 }
 
 #menu span {
   font-size: 1.4rem;
-}
-
-#menu .cut, #menu .perm {
-  /* margin-bottom: 3rem; */
-}
-
-#menu table {
-  margin-bottom:5rem;
 }
 
 .comment {
@@ -343,22 +353,7 @@ header li a:hover {
   padding-left: 2%;
 }
 
-#information th {
-  padding-right: 1.5rem;
-  text-align: left;
-  box-sizing: border-box;
-}
-
-#information td {
-  line-height: 2.5rem;
-  font-size: 1.4rem;
-}
-
-#information iframe {
-  width: 100%;
-}
-
-#reserve ,#gallery {
+#reserve {
   text-align: center;
 }
 
@@ -373,12 +368,10 @@ header li a:hover {
   margin: 2.5rem auto 0 auto;
   font-size: 1.6rem;
   font-weight: bold;
-  /* background: #eee; */
   background: #FFFFF0;
   letter-spacing: 0.3rem;
   line-height: 6.5rem;
   border: 0.2rem solid #444;
-  /* border: 0.2rem solid #2e221b; */
   border-radius: 0.3rem;
 }
 
@@ -397,11 +390,22 @@ header li a:hover {
 
 #reserve a:hover {
   background: #555;
-  /* background: #baba6f; */
-  /* background: #999955; */
-  /* background: #81813e; */
-  /* background: #212736; */
   color: #fff;
+}
+
+#information th {
+  padding-right: 1.5rem;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+#information td {
+  line-height: 2.5rem;
+  font-size: 1.4rem;
+}
+
+#information iframe {
+  width: 100%;
 }
 
 footer {
@@ -410,73 +414,9 @@ footer {
   text-align: center;
   color: #fff;
   background: #333;
-  /* background: #212736; */
   font-size: 1.2rem;
 }
 
-/* footer .fab {
-  margin-top: 3rem;
-  margin-bottom: 1.5rem;
-  color: #fff;
-}
-
-footer .fa-instagram {
-  margin-right: .5rem;
-} */
-
 footer a {
   color: #fff;
-}
-
-/* 追加 */
-.sp-gallery li {
-  list-style: none;
-}
-
-.pc {
-  display: block;
-}
-.sp {
-  display: none;
-  position: relative;
-  overflow: hidden;
-}
-
-.prev-btn, .next-btn {
-  width: 5rem;
-  height: 5rem;
-  /* margin: 0;
-  padding: 0; */
-  color: #333;
-  font-size: 5rem;
-  cursor: pointer;
-}
-
-.prev-btn {
-  /* margin-right: 1rem; */
-  float: left;
-  display: none;
-}
-.next-btn {
-  float: right;
-}
-
-.btn-wrap {
-  background: rgba(239,239,239,0.3);
-  /* width: 10rem; */
-  /* height: 5rem; */
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  /* z-index: 2; */
-  width: 10rem;
-  margin: 0 auto;
-}
-
-.active {
-  display: block;
-}
-
-.slide {
-  display: none;
 }
