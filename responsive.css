@@ -1,5 +1,14 @@
 /* 960px未満  */
 @media screen and (max-width: 959px) {
+  h2, h3 {
+    text-align: center;
+  }
+
+  .site-logo {
+    height: 4rem;
+    margin: 2rem 0;
+  }
+
   .item-right, .item-left {
     width: 100% !important;
   }
@@ -8,11 +17,7 @@
     width: 100%;
   }
 
-  h2, h3 {
-    text-align: center;
-  }
-
-  #concept-1st h2, #stylist-2nd h2, #stylist h2, #information h2 {
+  #concept h2, #stylist-2nd h2, #stylist h2, #information h2 {
     margin-top: 0;
   }
 
@@ -37,6 +42,7 @@
     background: #FFFFF0;
     box-sizing: border-box;
     z-index: 9;
+    transition: .3s;
   }
 
   header li {
@@ -47,15 +53,14 @@
     display: none;
   }
 
-  .menu-icon, #concept-1st .container, #stylist-2nd .container, #stylist .container, #menu .container,   #information .container {
+  .menu-icon, #concept .container, #stylist-2nd .container, #stylist .container, #menu .container,   #information .container {
       display: block;
     }
 
-  .top-banner {
+  .site-image img {
     width: 100%;
     min-height: 300px;
-    margin-top: 9rem;
-    /* transition: 0s; */
+    margin-top: 8rem;
     object-fit: cover;
     object-position: 50% 50%;
     }
@@ -64,33 +69,21 @@
     display: none !important;
   }
 
-  #concept-1st, #stylist-2nd, #stylist, #gallery, #menu, #reserve {
-    /* margin-top: -9rem; */
-    /* padding: 14rem 0 5rem 0; */
+  #concept, #stylist-2nd, #stylist, #gallery, #menu, #reserve {
     padding: 10rem 0 10rem 0;
   }
 
-  #concept-1st {
+  #concept {
     padding-top: 10rem;
   }
 
   #information {
-    /* margin-top: -9rem; */
-    /* padding: 14rem 0 7.5rem 0; */
     padding: 10rem 0 7.5rem 0;
   }
 
-  #concept-1st .item-left, #stylist-2nd .item-left, #stylist .item-right {
+  #concept .item-left, #stylist-2nd .item-left, #stylist .item-right {
     margin-bottom: 7.5rem;
     padding: 0 20%;
-  }
-
-  .bg-color {
-    /* background: #FFFFF0; */
-  }
-
-  .bg-color .flame::before,  .bg-color .flame::after {
-    /* background: #FFFFF0; */
   }
 
   .stylist-name {
@@ -146,7 +139,7 @@
     padding-left: 5%;
   }
 
-  #concept-1st, #stylist, #gallery, #menu, #reserve {
+  #concept, #stylist, #gallery, #menu, #reserve {
     /* padding: 12rem 0 3rem; */
 
   }
@@ -159,7 +152,7 @@
     /* padding: 9rem 0 7.5rem 0; */
   }
 
-  #concept-1st .item-left, #stylist-2nd .item-left, #stylist .item-right, #menu .item-half, .text-contents {
+  #concept .item-left, #stylist-2nd .item-left, #stylist .item-right, #menu .item-half, .text-contents {
     padding: 0 10%;
   }
 
@@ -191,7 +184,6 @@
   .active {
     display: block;
   }
-
 }
 
 /* 画面が横向きの場合 */
