@@ -88,9 +88,7 @@ $(window).scroll(function() {
 
 // 画像スライド
 $(function() {
-
   $('.slide-btn').click(function() {
-
     var $imageSlide = $('.active');
 
     $imageSlide.removeClass('active');
