@@ -26,12 +26,12 @@ $(function() {
 $('header a').click(function() {
   var id = $(this).attr('href');
   var position = $(id).offset().top;
-  $('html,body').animate({'scrollTop':position}, 1000);
+  $('html,body').animate({'scrollTop': position}, 1000);
 });
 
 // 下にスクロールすると画面表示される処理
 $(function() {
-  $('.js-effect').css("opacity","0");
+  $('.js-effect').css("opacity", "0");
   $(window).scroll(function () {
     $('.js-effect').each(function() {
       var imgPos = $(this).offset().top;
