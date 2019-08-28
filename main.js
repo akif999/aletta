@@ -39,13 +39,13 @@ $(function() {
       var windowHeight = $(window).height();
       if (scroll > imgPos - windowHeight + windowHeight/5){
         $(this).css({
-        'opacity'   :'1',
-        'transition':'1.5s',
+          'opacity'   :'1',
+          'transition':'1.5s',
         });
       } else {
         $(this).css({
-        'opacity':'0',
-        'transition':'1.5s',
+          'opacity'   :'0',
+          'transition':'1.5s',
         });
       }
     });
@@ -83,7 +83,8 @@ $(window).scroll(function(){
   } else {
     $("#navigation").css("top", 0 + "px");
   }
-  startPos = currentPos;});
+  startPos = currentPos;
+});
 
 // 画像スライド
 $(function() {
