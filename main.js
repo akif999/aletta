@@ -1,20 +1,20 @@
 // スクロールバーのフェードイン・アウト処理
 $(function() {
-    var topBtn = $('.scroll-icon');
-    topBtn.hide();
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 500) {
-            topBtn.fadeIn();
-        } else {
-            topBtn.fadeOut();
-        }
-    });
-    topBtn.click(function () {
-        $('body, html').animate({
-            scrollTop: 0
-        }, 500);
-        return false;
-    });
+  var topBtn = $('.scroll-icon');
+  topBtn.hide();
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 500) {
+      topBtn.fadeIn();
+    } else {
+      topBtn.fadeOut();
+    }
+  });
+  topBtn.click(function () {
+    $('body, html').animate({
+      scrollTop: 0
+    }, 500);
+    return false;
+  });
 });
 
 // ヘッダーの画像とナビゲーションのフェードイン
@@ -66,9 +66,9 @@ $(function() {
 var ua = navigator.userAgent.toLowerCase();
 var isMobile = /iphone/.test(ua) || /android(.+)?mobile/.test(ua);
 if (!isMobile) {
-    $('a[href^="tel:"]').on('click', function(e) {
-        e.preventDefault();
-    });
+  $('a[href^="tel:"]').on('click', function(e) {
+    e.preventDefault();
+  });
 }
 
 // 下にスクロールfadeout、上にスクロールfadein
