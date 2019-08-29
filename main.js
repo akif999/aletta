@@ -1,20 +1,20 @@
 // スクロールバーのフェードイン・アウト処理
 $(function() {
-    var topBtn = $('.scroll-icon');
-    topBtn.hide();
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 500) {
-            topBtn.fadeIn();
-        } else {
-            topBtn.fadeOut();
-        }
-    });
-    topBtn.click(function () {
-        $('body, html').animate({
-            scrollTop: 0
-        }, 500);
-        return false;
-    });
+  var topBtn = $('.scroll-icon');
+  topBtn.hide();
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 500) {
+      topBtn.fadeIn();
+    } else {
+      topBtn.fadeOut();
+    }
+  });
+  topBtn.click(function () {
+    $('body, html').animate({
+      scrollTop: 0
+    }, 500);
+    return false;
+  });
 });
 
 // ヘッダーの画像とナビゲーションのフェードイン
@@ -26,26 +26,26 @@ $(function() {
 $('header a').click(function() {
   var id = $(this).attr('href');
   var position = $(id).offset().top;
-  $('html,body').animate({'scrollTop':position},1000);
+  $('html,body').animate({'scrollTop': position}, 1000);
 });
 
 // 下にスクロールすると画面表示される処理
 $(function() {
-  $('.js-effect').css("opacity","0");
+  $('.js-effect').css("opacity", "0");
   $(window).scroll(function () {
     $('.js-effect').each(function() {
       var imgPos = $(this).offset().top;
       var scroll = $(window).scrollTop();
       var windowHeight = $(window).height();
-      if (scroll > imgPos - windowHeight + windowHeight/5){
+      if (scroll > imgPos - windowHeight * 1.2){
         $(this).css({
-        'opacity'   :'1',
-        'transition':'1.5s',
+          'opacity'   :'1',
+          'transition':'1.5s',
         });
       } else {
         $(this).css({
-        'opacity':'0',
-        'transition':'1.5s',
+          'opacity'   :'0',
+          'transition':'1.5s',
         });
       }
     });
@@ -54,10 +54,10 @@ $(function() {
 
 // レスポンシブ用メニューバーの開閉処理
 $(function() {
-  $('#menu-show').click(function(){
+  $('#menu-show').click(function() {
     $('#modal').fadeIn();
   });
-   $('#close-btn, .link-btn').click(function(){
+   $('#close-btn, .link-btn').click(function() {
      $('#modal').fadeOut();
    });
 });
@@ -66,15 +66,15 @@ $(function() {
 var ua = navigator.userAgent.toLowerCase();
 var isMobile = /iphone/.test(ua) || /android(.+)?mobile/.test(ua);
 if (!isMobile) {
-    $('a[href^="tel:"]').on('click', function(e) {
-        e.preventDefault();
-    });
+  $('a[href^="tel:"]').on('click', function(e) {
+    e.preventDefault();
+  });
 }
 
 // 下にスクロールfadeout、上にスクロールfadein
 var menuHeight = $("#navigation").height();
 var startPos = 0;
-$(window).scroll(function(){
+$(window).scroll(function() {
   var currentPos = $(this).scrollTop();
   if (currentPos > startPos) {
     if($(window).scrollTop() >= 200) {
@@ -83,13 +83,12 @@ $(window).scroll(function(){
   } else {
     $("#navigation").css("top", 0 + "px");
   }
-  startPos = currentPos;});
+  startPos = currentPos;
+});
 
 // 画像スライド
 $(function() {
-
   $('.slide-btn').click(function() {
-
     var $imageSlide = $('.active');
 
     $imageSlide.removeClass('active');
@@ -105,7 +104,7 @@ $(function() {
     $('.slide-btn').fadeIn(fadeTime);
     if (slideIndex == 0) {
       $('.prev-btn').fadeOut(fadeTime);
-        } else if (slideIndex == $('.slide').length-1) {
+        } else if (slideIndex == $('.slide').length - 1) {
       $('.next-btn').fadeOut(fadeTime);
     }
   });
