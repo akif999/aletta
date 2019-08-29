@@ -1,9 +1,14 @@
-Name: Takanori Isobe
+## タイトル
+hair salon "ALETTA"様のホームページ
 
-Overview
+## 概要
+京都・伏見のhair salon "ALETTA"様のホームページを制作させていただきました。
+レスポンシブデザインにも対応しています。
 
-京都伏見の美容院「ALETTA」のホームページ
+## 使用技術一覧
+*html5
+*CSS3
+*javascript(jQuery)
 
-レスポンシブデザイン対応
-
-作成途中の為、一部コメントアウトしてあり、冗長的な箇所有
+## Author
+Takanori Isobe(User name is "Taka-hyt")
