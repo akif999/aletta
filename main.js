@@ -64,12 +64,15 @@ $(function() {
 });
 
 // スマートホンのみ電話発信処理
-var ua = navigator.userAgent.toLowerCase();
-var isMobile = /iphone/.test(ua) || /android(.+)?mobile/.test(ua);
-if (!isMobile) {
+var ua = navigator.userAgent;
+if (!isMobile(ua)) {
   $('a[href^="tel:"]').on('click', function(e) {
     e.preventDefault();
   });
+}
+
+function isMobile(ua) {
+    return /iphone/.test(ua.toLowerCase()) || /android(.+)?mobile/.test(ua.toLowerCase());
 }
 
 // 下にスクロールfadeout、上にスクロールfadein
