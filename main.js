@@ -1,9 +1,10 @@
 // スクロールバーのフェードイン・アウト処理
 $(function() {
+  const SCROLL_DISTANCE = 500;
   var topBtn = $('.scroll-icon');
   topBtn.hide();
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 500) {
+    if ($(this).scrollTop() > SCROLL_DISTANCE) {
       topBtn.fadeIn();
     } else {
       topBtn.fadeOut();
@@ -12,7 +13,7 @@ $(function() {
   topBtn.click(function () {
     $('body, html').animate({
       scrollTop: 0
-    }, 500);
+    }, SCROLL_DISTANCE);
     return false;
   });
 });
@@ -98,14 +99,14 @@ $(function() {
       $imageSlide.prev().addClass('active');
     }
 
-    var fadeTime = 150;
+    const FADE_TIMER = 150;
     var slideIndex = $('.slide').index($('.active'));
 
-    $('.slide-btn').fadeIn(fadeTime);
+    $('.slide-btn').show(FADE_TIMER);
     if (slideIndex == 0) {
-      $('.prev-btn').fadeOut(fadeTime);
+      $('.prev-btn').hide(FADE_TIMER);
         } else if (slideIndex == $('.slide').length - 1) {
-      $('.next-btn').fadeOut(fadeTime);
+      $('.next-btn').hide(FADE_TIMER);
     }
   });
 });
