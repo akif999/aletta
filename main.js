@@ -1,6 +1,9 @@
+const SCROLL_DISTANCE_VALUE = 500;
+const SCROLL_TIME_VALUE = 600;
+const FADE_TIME_VALUE = 150;
+
 // スクロールバーのフェードイン・アウト処理
 $(function() {
-  const SCROLL_DISTANCE_VALUE = 500;
   var topBtn = $('.scroll-icon');
   topBtn.hide();
   $(window).scroll(function () {
@@ -13,7 +16,7 @@ $(function() {
   topBtn.click(function () {
     $('body, html').animate({
       scrollTop: 0
-    }, SCROLL_DISTANCE_VALUE);
+    }, SCROLL_TIME_VALUE);
     return false;
   });
 });
@@ -27,7 +30,7 @@ $(function() {
 $('header a').click(function() {
   var id = $(this).attr('href');
   var position = $(id).offset().top;
-  $('html,body').animate({'scrollTop': position}, 1000);
+  $('html,body').animate({'scrollTop': position}, SCROLL_TIME_VALUE);
 });
 
 // 下にスクロールすると画面表示される処理
@@ -102,7 +105,6 @@ $(function() {
       $imageSlide.prev().addClass('active');
     }
 
-    const FADE_TIME_VALUE = 150;
     var slideIndex = $('.slide').index($('.active'));
 
     $('.slide-btn').show(FADE_TIME_VALUE);
