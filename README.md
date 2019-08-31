@@ -6,8 +6,8 @@ hair salon 「ALETTA」様のホームページ
 レスポンシブデザインに対応しています。
 
 ## 使用技術一覧
-* html5
-* CSS3
+* html
+* CSS
 * javascript(jQuery)
 
 ## 著者
