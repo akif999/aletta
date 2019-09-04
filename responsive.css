@@ -1,4 +1,4 @@
-/* 960px未満  */
+/* 画面サイズ960px未満  */
 @media screen and (max-width: 959px) {
   h2, h3 {
     text-align: center;
@@ -70,11 +70,7 @@
   }
 
   #concept, #stylist-2nd, #stylist, #gallery, #menu, #reserve {
-    padding: 10rem 0 10rem 0;
-  }
-
-  #concept {
-    padding-top: 10rem;
+    padding: 10rem 0;
   }
 
   #information {
@@ -84,6 +80,11 @@
   #concept .item-left, #stylist-2nd .item-left, #stylist .item-right {
     margin-bottom: 7.5rem;
     padding: 0 20%;
+  }
+
+  .item-left, .item-right {
+    padding: 0 20%;
+    box-sizing: border-box;
   }
 
   .stylist-name {
@@ -129,31 +130,23 @@
   }
 }
 
-/* 560px未満  */
+/* 画面サイズ560px未満  */
 @media screen and (max-width: 559px) {
-  body {
-    font-size: 1.4rem;
-  }
-
   #navigation {
     padding-left: 5%;
-  }
-
-  #concept, #stylist, #gallery, #menu, #reserve {
-    /* padding: 12rem 0 3rem; */
-
   }
 
   .gallery-1st div {
     margin-bottom: 0.6rem;
   }
 
-  #information {
-    /* padding: 9rem 0 7.5rem 0; */
-  }
-
   #concept .item-left, #stylist-2nd .item-left, #stylist .item-right, #menu .item-half, .text-contents {
     padding: 0 10%;
+  }
+
+  .item-left, .item-right {
+    padding: 0 3%;
+    box-sizing: border-box;
   }
 
   #menu th {
@@ -188,10 +181,6 @@
 
 /* 画面が横向きの場合 */
 @media (orientation: landscape) {
-  .link-item {
-    margin-top: 7.5rem;
-  }
-
   #modal a {
     margin-bottom: 0.3rem;
     font-size: 1.8rem;
