@@ -41,9 +41,15 @@ $(function() {
       var scroll = $(window).scrollTop();
       var windowHeight = $(window).height();
       if (scroll > imgPos - windowHeight * 1.2){
-        $(this).css("opacity", "1");
+        $(this).css({
+          'opacity'   :'1',
+          'transition':'1.5s',
+        });
       } else {
-        $(this).css("opacity", "0");
+        $(this).css({
+          'opacity'   :'0',
+          'transition':'1.5s',
+        });
       }
     });
   });
