@@ -14,9 +14,7 @@ $(function() {
     }
   });
   topBtn.click(function () {
-    $('body, html').animate({
-      scrollTop: 0
-    }, SCROLL_TIME_VALUE);
+    $('body, html').animate({scrollTop: 0}, SCROLL_TIME_VALUE);
     return false;
   });
 });
@@ -31,6 +29,7 @@ $('header a').click(function() {
   var id = $(this).attr('href');
   var position = $(id).offset().top;
   $('html,body').animate({'scrollTop': position}, SCROLL_TIME_VALUE);
+  return false;
 });
 
 // 下にスクロールすると画面表示される処理
@@ -42,15 +41,9 @@ $(function() {
       var scroll = $(window).scrollTop();
       var windowHeight = $(window).height();
       if (scroll > imgPos - windowHeight * 1.2){
-        $(this).css({
-          'opacity'   :'1',
-          'transition':'1.5s',
-        });
+        $(this).css("opacity", "1");
       } else {
-        $(this).css({
-          'opacity'   :'0',
-          'transition':'1.5s',
-        });
+        $(this).css("opacity", "0");
       }
     });
   });
