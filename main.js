@@ -43,12 +43,12 @@ $(function() {
       if (scroll > imgPos - windowHeight * 1.6){
         $(this).css({
           'opacity'   :'1',
-          'transition':'1.5s ease-in',
+          'transition':'1.5s',
         });
       } else {
         $(this).css({
           'opacity'   :'0',
-          'transition':'1.5s ease-in',
+          'transition':'1.5s',
         });
       }
     });
