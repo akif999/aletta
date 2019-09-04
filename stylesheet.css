@@ -135,12 +135,6 @@ header li a:hover {
 
 .top-banner {
   width: 100%;
-  opacity: 0;
-  transition: 3s;
-}
-
-.show {
-  opacity: 1;
 }
 
 .scroll-icon {
