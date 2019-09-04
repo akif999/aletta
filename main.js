@@ -19,6 +19,11 @@ $(function() {
   });
 });
 
+// ヘッダーの画像とナビゲーションのフェードイン
+$(function() {
+  $('.js-header-show').addClass('show');
+});
+
 // リンクにクリックでスクロールする処理
 $('header a').click(function() {
   var id = $(this).attr('href');
