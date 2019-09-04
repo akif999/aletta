@@ -40,15 +40,15 @@ $(function() {
       var imgPos = $(this).offset().top;
       var scroll = $(window).scrollTop();
       var windowHeight = $(window).height();
-      if (scroll > imgPos - windowHeight * 1.2){
+      if (scroll > imgPos - windowHeight * 1.4){
         $(this).css({
           'opacity'   :'1',
-          'transition':'1.5s',
+          'transition':'1.5s ease-in',
         });
       } else {
         $(this).css({
           'opacity'   :'0',
-          'transition':'1.5s',
+          'transition':'1.5s ease-in',
         });
       }
     });
