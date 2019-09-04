@@ -40,7 +40,7 @@ $(function() {
       var imgPos = $(this).offset().top;
       var scroll = $(window).scrollTop();
       var windowHeight = $(window).height();
-      if (scroll > imgPos - windowHeight * 1.4){
+      if (scroll > imgPos - windowHeight * 1.6){
         $(this).css({
           'opacity'   :'1',
           'transition':'1.5s ease-in',
