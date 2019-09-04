@@ -164,10 +164,6 @@ header li a:hover {
   display: flex;
 }
 
-.js-effect {
-  transition: 1s ease-in;
-}
-
 #concept .item-left, #stylist-2nd .item-left {
   width: 40%;
   padding: 0 7% 0 3%;
@@ -280,6 +276,7 @@ header li a:hover {
 .next-btn {
   float: right;
 }
+
 .bg-color {
   background: #F5F5DC;
 }
